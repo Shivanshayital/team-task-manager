@@ -15,8 +15,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-connectDB();
+// Connect to MongoDB (non-blocking)\nconnectDB().catch(err => console.error('DB init failed:', err));
 
 // Routes
 app.use('/api/auth', authRoutes);

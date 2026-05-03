@@ -3,10 +3,7 @@
 ## [x] Step 1: Create/Update root package.json with start script delegating to server/
 - Added `\"scripts\": {\"start\": \"cd server && npm start\", \"dev\": \"cd server && npm run dev\"}, \"main\": \"server/server.js\", \"type\": \"module\".
 
-## [ ] Step 2: Install dependencies in root (optional, for mongodb dep)
-```bash
-npm install
-```
+## [x] Step 2: Merged deps to root package.json, npm ci now works for Railway
 
 ## [ ] Step 3: Test locally
 ```bash
